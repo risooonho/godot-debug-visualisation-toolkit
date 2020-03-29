@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Resource",
+"class": "DrawingOutline",
+"language": "GDScript",
+"path": "res://src/Draw/DrawingOutline.gd"
+}, {
+"base": "Resource",
+"class": "DrawingShape",
+"language": "GDScript",
+"path": "res://src/Draw/DrawingShape.gd"
+}, {
+"base": "Resource",
+"class": "DrawingStyle",
+"language": "GDScript",
+"path": "res://src/Draw/DrawingStyle.gd"
+}, {
+"base": "Node2D",
+"class": "DrawingUtils2D",
+"language": "GDScript",
+"path": "res://src/Draw/DrawingUtils.gd"
+}, {
+"base": "Node2D",
+"class": "ShapeDrawer",
+"language": "GDScript",
+"path": "res://src/Draw/ShapeDrawer.gd"
+} ]
+_global_script_class_icons={
+"DrawingOutline": "",
+"DrawingShape": "",
+"DrawingStyle": "",
+"DrawingUtils2D": "",
+"ShapeDrawer": ""
+}
+
+[application]
+
+config/name="GDQuest Debug Visualization Toolkit"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
